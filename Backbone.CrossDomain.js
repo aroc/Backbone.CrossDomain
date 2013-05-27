@@ -75,6 +75,7 @@
         requestDomainParser.href = requestUrl(model, options);
 
         if (requestDomainParser.host !== "" && (thisDomainParser.host !== requestDomainParser.host)) {
+           jQuery.support.cors = true;
             useXDomainRequest = true;
         }
 
